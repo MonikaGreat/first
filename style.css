@@ -1,0 +1,41 @@
+ h1 {background: #FFD700; 
+}
+img {max-width: 250px;
+margin: 0 2% 0 1%;
+float: left;}
+
+.plan {display:none;
+   padding: 10px;
+   margin: 10px auto;
+   max-width: 250px;
+   background: #ff0030;
+   color: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+   font-weight: normal;
+   text-align:center;
+	}
+	.modalContainer {clear: both;}
+table, tr, th {border:1px solid grey;}	
+	
+@media only screen and (max-width: 800px) {
+    .plan {display:block;}
+    .modalContainer, h1 {display:none;}
+	tr:nth-of-type(odd) { background: #FFD700; 
+}
+}
+@media only screen and (max-width: 600px) {
+table, thead, tbody, th, td, tr { display: block;
+}
+
+.one {display:none;}
+th:nth-of-type(2):before { content: "Количество: "; }
+th:nth-of-type(3):before { content: "Время"; }
+th:nth-of-type(3):before { content: "Схема"; }
+
+}
